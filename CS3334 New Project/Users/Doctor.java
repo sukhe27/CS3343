@@ -12,8 +12,5 @@ public class Doctor extends User{
         super(name, HKID, password);
         //TODO Auto-generated constructor stub
     }
-
-    
-    
-
+        
 }

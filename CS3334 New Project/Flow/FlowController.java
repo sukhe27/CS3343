@@ -50,7 +50,7 @@ public class FlowController{
                     switch(userChoice){
                         case 1: NewAppointment.initiate();
                         break;
-                        case 2: CheckAppointment.initiate();
+                        case 2: user.checkAppointments();
                         break;
                         case 3: DeleteAppointment.initiate();
                         default:

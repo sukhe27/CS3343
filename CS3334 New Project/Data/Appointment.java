@@ -18,5 +18,11 @@ public class Appointment {
         this.date=date;
         this.time=time;
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "Doctor: " + doctor + " Patient: " + patient + " Date: " + date + " Time: " + time;
+    }
 }
 
