@@ -27,7 +27,18 @@ public class Hospital {
         userList.add(user);
     }
 
-    public User getUserByHKID(String hKID) {
+    public User getUserByHKID(String HKID) {
+        for(User user:userList)
+        {
+            if (user.getHKID().equals(HKID))
+            {
+                return user;
+            }
+        }
         return null;
+    }
+
+    public void removeUser(User doctor) {
+        userList.remove(doctor);
     }
 }

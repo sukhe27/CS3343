@@ -24,6 +24,19 @@ public class FlowController{
                     {
                         System.out.println("Login successful!");
                         //add more options
+
+                        System.out.println("Please select what you would like to do:");
+                        System.out.println("1. Add Doctor\n2. Remove Doctor");
+
+                        int userChoice = sc.nextInt();
+                        switch(userChoice){
+                            case 1: DoctorHandler.addDoctor(sc);
+                            break;
+                            case 2: DoctorHandler.removeDoctor(sc, hospital);
+                            default:
+                        }
+                        break;
+
                     }
                     else
                     {
@@ -58,6 +71,7 @@ public class FlowController{
                     break;
                 case 3:
                     user = UserHandler.Doctorlogin(hospital,sc);
+                    System.out.println("Please select what you would like to do:");
             }
 
         }while(portalAccess);

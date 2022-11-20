@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 import Users.Doctor;
 import Users.Patient;
+import Users.User;
 public class Department {
     private String name;
     private ArrayList<Doctor> doctors;
@@ -16,5 +17,12 @@ public class Department {
         this.doctors=new ArrayList<>();
         this.patients=new ArrayList<>();
         this.appointments=new ArrayList<>();
+    }
+    public void addDoctor(Doctor doctor)
+    {
+        doctors.add(doctor);
+    }
+    public void removeDoctor(User doctor) {
+        doctors.remove(doctor);
     }
 }

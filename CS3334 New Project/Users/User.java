@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.security.auth.login.AppConfigurationEntry;
 
 import Data.Appointment;
+import Data.Department;
 import Data.Hospital;
 
 public abstract class User {
@@ -27,13 +28,19 @@ public abstract class User {
         return this.name;
     }
     public void checkAppointments(){
-        
+
         for(Appointment appointment: appointments)
         {
             System.out.println(appointment);
         }
         
     }
+    public String getHKID() {
+        return this.HKID;
+    }
+    // public Department getDepartment() {
+    //     return null;
+    // }
 
 
     
